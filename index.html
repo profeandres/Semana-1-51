@@ -103,6 +103,10 @@
         .fondo-servicios {
             color:white;
             background-color: #F65058FF;
+            display:block;
+            max-width: min-content;
+            margin-left: 65px;
+
         }
 
         .news-info {
@@ -128,7 +132,7 @@
         }
 
         .services-info__imagen {
-            border-radius: 50%;
+            border-radius: 0;
             margin-right: auto;
             margin-left: auto;
         }
@@ -147,6 +151,11 @@
         .fondo-noticias {
             color: #000;
             background-color: #FBDE44FF;
+        }
+
+        .descripcionServicios{
+            display: block;
+            margin-left: 180px;
         }
 
     </style>
@@ -185,26 +194,29 @@
     <!-- inicio contenido principal -->
     <div>
         <h1 <span class="fondo-servicios">Servicios</span></h1>
+        <p class="descripcionServicios">
+            Nuestro servicio se enfoca en facilitar a los usuarios recomendaciones de producciones cinematográficas del genero de su preferencia.
+        </p>
         <!-- inicio sección de servicios -->
         <div id="servicios" class="services-section">
             <article class="services-info">
-                <img class="services-info__imagen" src="http://placeimg.com/200/200/nature" alt="">
+                <img class="services-info__imagen" src="images/lista (1).svg" width="200px" alt="">
                 <h2 class="services-info__title">Lo mejor de cada género</h2>
                 <p class="services-info__text">
    
-                    Te ayudamos a encontrar peliculas de la categoría de tu preferenci
+                    Te ayudamos a encontrar peliculas de la categoría de tu preferencia
                 </p>
             </article>
             <article class="services-info">
-                <img class="services-info__imagen" src="http://placeimg.com/200/200/tech" alt="">
+                <img class="services-info__imagen" src="images/bueno.svg" width="200px" alt="">
                 <h2 class="services-info__title">Recomendaciones Bash</h2>
                 <p class="services-info__text">
                     Te proponemos peliculas de diferentes generos escogidas por nosotros mismos
                 </p>
             </article>
             <article class="services-info">
-                <img class="services-info__imagen" src="http://placeimg.com/200/200/people" alt="">
-                <h2 class="services-info__title">Entérate de las más vistas</h2>
+                <img class="services-info__imagen" src="images/popularidad.svg" width="200px" alt="">
+                <h2 class="services-info__title">Más vistas</h2>
                 <p class="services-info__text">
                    Te damos a conocer las películas más populares
                 </p>
