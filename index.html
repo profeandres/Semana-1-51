@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -84,6 +87,7 @@
         .seccion-equipo {
             display: flex;
             margin-bottom: 100px;
+            margin-left: 20px;
         }
 
         .seccion-noticias,
@@ -136,6 +140,15 @@
             margin-right: auto;
             margin-left: auto;
         }
+        
+        .team_title{
+            font-family: 'Montserrat', sans-serif;
+            background-color: #25294f;
+            padding: 10px 9px 10px;
+            display:block;
+            max-width: min-content;
+            margin-left: 65px
+        }
 
         .team-info{
             width: 25%;
@@ -146,6 +159,11 @@
             display: block;
             margin-right: auto;
             margin-left: auto;
+        }
+        
+        .team-info__title{
+            font-family: 'Montserrat', sans-serif;
+
         }
 
         .fondo-noticias {
@@ -276,44 +294,49 @@
         </div>
         <!-- fin sección de noticias -->
 
-
-        <h1>Equipo</h1>
+        
+        <h1 class="team_title">Equipo</h1>
         <!-- inicio sección de equipo -->
         <section id="team" class="seccion-equipo">
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/people" alt="">
-                <h2 class="team-info__title">Integrante 1</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/VL9WrC5Z/icons8-man-58.png" alt="">
+                <h2 class="team-info__title">Andrés Cantillo</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad de Barranquilla, estudié licenciatura en matemáticas y actualmente soy docente.Entre mis pasatiempos esta llenar sudokus y ver peliculas de accion y suspenso como Jurasic Park, Resident Evil y Silent Hill.
+
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/tech" alt="">
-                <h2 class="team-info__title">Integrante 2</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/jSz60rQw/icons8-woman-60-1.png" alt="">
+                <h2 class="team-info__title">Camila Pacheco</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad de Popayán, actualmente estoy estudiando Ingenieria Electrónica en la Universidad del Cauca y en mis ratos libres me gusta leer y peliculas romance y drama como El diario de Noah y la razon de estar contigo.
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/nature" alt="">
-                <h2 class="team-info__title">Integrante 3</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/xCW3HGKh/icons8-man-60.png" alt="">
+                <h2 class="team-info__title">Wilmer Camargo</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy del municipio de Soacha, estudié Economía en el Colegio Mayor de Cundinamarca. Entre mis pasatiempos esta ver peliculas comedia romantica o drama como About Time y Shawshank Redemption.
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/arch" alt="">
-                <h2 class="team-info__title">Integrante 4</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/qM2jsFDL/icons8-man-58-1.png" alt="">
+                <h2 class="team-info__title">Miguel Velazco</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad Popayán, estudio en el Colegio Mayor del Cauca. Algunos de mis pasatiempos son dibujar y ver peliculas biograficas o drama como The Walk y The Greatest Showman
+                </p>
+            </article>
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="https://i.postimg.cc/VspXJNK0/icons8-woman-60.png" alt="">
+                <h2 class="team-info__title">Melissa Galvez</h2>
+                <p class="team-info__text">
+                    Soy de la ciudad de Popayán, estudio Administración de Empresas en la Universidad del Cauca y en mis ratos libres me gusta pintar y ver peliculas de animacion o suspenso como El Viaje de Chihiro o Interstellar.
                 </p>
             </article>
 
