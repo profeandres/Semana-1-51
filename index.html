@@ -117,10 +117,17 @@
         .news-header {
             display: flex;
             justify-content: space-around;
+            
         }
 
         .news-info__title {
-            align-self: center;
+            align-self: flex-start;
+            color: #FBDE44FF;
+        }
+
+        .news-imagen{            
+            border: 7px groove #FBDE44FF;
+            display: flex;
         }
 
         .seccion-pie {
@@ -239,12 +246,12 @@
         <div id="noticias" class="seccion-noticias">
             <article class="news-info">
                 <div class="news-header">
-                    <img class="news-info__imagen" src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/09/dune_denis_villeneuve_2.jpg?resize=1200%2C800&ssl=1"
-                     width="300" height="200" alt="">
+                    <img class="news-imagen" src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/09/dune_denis_villeneuve_2.jpg?resize=1200%2C800&ssl=1"
+                     align="right" width="350" height="200" alt="">
                     <h2 class="news-info__title">DUNE</h2>
                 </div>
                 <p class="fuenteImagen">Warner Bros.</p>
-                <p class="news-info__text">
+                <p class="text-a">
                     Nos alegra poder decirle a los espectadores que tienen muchas ganas de ver
                      la nueva ‘Dune’, de Denis Villeneuve, que esta es la adaptación de la
                      novela de Frank Herbert que estábamos esperando. - Hipertextual
@@ -253,12 +260,12 @@
 
             <article class="news-info">
                 <div class="news-header">
-                    <img class="news-info__imagen" src="https://i.blogs.es/c52bb5/diseno-sin-titulo-4-/1366_2000.jpeg" 
-                    width="300" height="200" alt="">
+                    <img class="news-imagen" src="https://i.blogs.es/c52bb5/diseno-sin-titulo-4-/1366_2000.jpeg" 
+                     height="200" alt="">
                     <h2 class="news-info__title">Robert Oppenheimer</h2>
                 </div>
                 <p class="fuenteImagen">Christopher Nolan y Robert Oppenheimer</p>
-                <p class="news-info__text">
+                <p class="text-a">
                     La nueva película del director de 'Tenet' y 'Origen', abordará de nuevo el
                     mundo de la II Guerra Mundial. Será una película sobre
                     la vida del que fue conocido como "el padre de la bomba atómica",
@@ -268,23 +275,30 @@
 
             <article class="news-info">
                 <div class="news-header">
-                    <img class="news-info__imagen" src="http://placeimg.com/400/200/arch" alt="">
-                    <h2 class="news-info__title">Noticia 3</h2>
+                    <img class="news-imagen" src="https://media.revistagq.com/photos/60d59fb654e0443ce59c73ec/16:9/w_2560%2Cc_limit/Shang-Chi-Trailer.jpeg" 
+                    width="350" height="200" alt="noticias">
+                    <h2 class="news-info__title">Shang-Chi</h2>
                 </div>
-                <p class="news-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                <p class="fuenteImagen">Marvel Studios</p>
+                <p class="text-a">
+                    'Shang-Chi y la leyenda de los Diez Anillos': el kung fu puede transformar
+                     la acción Marvel, y este es un primer paso. Se abre una vía para la forma de
+                     visualizar la acción en el cine de superhéroes
+                     en la que la propia Marvel se había estancado. -xataka
                 </p>
             </article>
 
             <article class="news-info">
                 <div class="news-header">
-                    <img class="news-info__imagen" src="http://placeimg.com/400/200/people" alt="">
-                    <h2 class="news-info__title">Noticia 4</h2>
+                    <img class="news-imagen" src="https://i1.wp.com/hipertextual.com/wp-content/uploads/2021/09/el-tubo.jpg?resize=1200%2C811&ssl=1"
+                    width="350" height="200"  alt="">
+                    <h2 class="news-info__title">El Tubo</h2>
                 </div>
-                <p class="news-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                <p class="fuenteImagen">El Tubo, de Mathieu Turi</p>
+                <p class="text-a">
+                    La cualidad de El Tubo para sorprender llega a su punto y
+                     de hecho se sostiene sobre un recorrido singular hacia un final desconcertante.
+                     ¿Es toda la estructura una lucha para sobrevivir, una prueba de fortaleza o algo peor?
                 </p>
             </article>
 
