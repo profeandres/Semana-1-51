@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -84,6 +87,7 @@
         .seccion-equipo {
             display: flex;
             margin-bottom: 100px;
+            margin-left: 20px;
         }
 
         .seccion-noticias,
@@ -143,6 +147,15 @@
             margin-right: auto;
             margin-left: auto;
         }
+        
+        .team_title{
+            font-family: 'Montserrat', sans-serif;
+            background-color: #25294f;
+            padding: 10px 9px 10px;
+            display:block;
+            max-width: min-content;
+            margin-left: 65px
+        }
 
         .team-info{
             width: 25%;
@@ -154,13 +167,15 @@
             margin-right: auto;
             margin-left: auto;
         }
+        
+        .team-info__title{
+            font-family: 'Montserrat', sans-serif;
+
+        }
 
         .fondo-noticias {
             color: #000;
             background-color: #FBDE44FF;
-            display:block;
-            max-width: min-content;
-            margin-left: 65px;
         }
 
         .descripcionServicios{
@@ -171,6 +186,42 @@
         .fuenteImagen{
             display: block;
             font-size: 10px;
+        }
+
+        .footer-section{
+            background-color: #F65058FF;
+        }
+
+        .menucontainer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mapaDelSitio ul a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .footerbottom{
+            display: flex;
+            justify-content:space-between;
+            background-color: rgb(255, 65, 74);
+            padding: 5px 0px;
+        }
+    
+        .right,.left{
+            display: inline;
+            width: 50%;
+            text-align: center;
+        }
+
+        .privateNotice,.legal,.cookiePolicy{
+            display: inline-block;
+            margin: 0px 10px;
+        }
+        .privateNotice a,.legal a,.cookiePolicy a{
+            text-decoration: none;
+            color:white;
         }
 
     </style>
@@ -208,14 +259,14 @@
 
     <!-- inicio contenido principal -->
     <div>
-        <h1 <span class="fondo-servicios">Servicios</span></h1>
+        <h1 id="servicios" <span class="fondo-servicios">Servicios</span></h1>
         <p class="descripcionServicios">
             Nuestro servicio se enfoca en facilitar a los usuarios recomendaciones de producciones cinematográficas del genero de su preferencia.
         </p>
         <!-- inicio sección de servicios -->
         <div id="servicios" class="services-section">
             <article class="services-info">
-                <img class="services-info__imagen" src="images/lista (1).svg" width="200px" alt="">
+                <img class="services-info__imagen" src="images/iconoServicio1.svg" width="200px" alt="">
                 <h2 class="services-info__title">Lo mejor de cada género</h2>
                 <p class="services-info__text">
    
@@ -223,14 +274,14 @@
                 </p>
             </article>
             <article class="services-info">
-                <img class="services-info__imagen" src="images/bueno.svg" width="200px" alt="">
+                <img class="services-info__imagen" src="images/iconoServicio2.svg" width="200px" alt="">
                 <h2 class="services-info__title">Recomendaciones Bash</h2>
                 <p class="services-info__text">
                     Te proponemos peliculas de diferentes generos escogidas por nosotros mismos
                 </p>
             </article>
             <article class="services-info">
-                <img class="services-info__imagen" src="images/popularidad.svg" width="200px" alt="">
+                <img class="services-info__imagen" src="images/iconoServicio3.svg" width="200px" alt="">
                 <h2 class="services-info__title">Más vistas</h2>
                 <p class="services-info__text">
                    Te damos a conocer las películas más populares
@@ -241,7 +292,7 @@
 
 
 
-        <h1 <span class="fondo-noticias">Noticias</span></h1>
+        <h1 id="noticias" <span class="fondo-noticias">Noticias</span></h1>
         <!-- inicio sección de noticias -->
         <div id="noticias" class="seccion-noticias">
             <article class="news-info">
@@ -305,44 +356,49 @@
         </div>
         <!-- fin sección de noticias -->
 
-
-        <h1>Equipo</h1>
+        
+        <h1 class="team_title" id="Equipo">Equipo</h1>
         <!-- inicio sección de equipo -->
         <section id="team" class="seccion-equipo">
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/people" alt="">
-                <h2 class="team-info__title">Integrante 1</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/VL9WrC5Z/icons8-man-58.png" alt="">
+                <h2 class="team-info__title">Andrés Cantillo</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad de Barranquilla, estudié licenciatura en matemáticas y actualmente soy docente.Entre mis pasatiempos esta llenar sudokus y ver peliculas de accion y suspenso como Jurasic Park, Resident Evil y Silent Hill.
+
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/tech" alt="">
-                <h2 class="team-info__title">Integrante 2</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/jSz60rQw/icons8-woman-60-1.png" alt="">
+                <h2 class="team-info__title">Camila Pacheco</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad de Popayán, estudio Ingenieria Electrónica en la Universidad del Cauca y en mis ratos libres me gusta leer y peliculas romance y drama como El diario de Noah y la razon de estar contigo.
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/nature" alt="">
-                <h2 class="team-info__title">Integrante 3</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/xCW3HGKh/icons8-man-60.png" alt="">
+                <h2 class="team-info__title">Wilmer Camargo</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy del municipio de Soacha, estudié Economía en el Colegio Mayor de Cundinamarca. Entre mis pasatiempos esta ver peliculas comedia romantica o drama como About Time y Shawshank Redemption.
                 </p>
             </article>
 
             <article class="team-info">
-                <img class="team-info__imagen" src="http://placeimg.com/100/200/arch" alt="">
-                <h2 class="team-info__title">Integrante 4</h2>
+                <img class="team-info__imagen" src="https://i.postimg.cc/qM2jsFDL/icons8-man-58-1.png" alt="">
+                <h2 class="team-info__title">Miguel Velazco</h2>
                 <p class="team-info__text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quas voluptate magni repellat eligendi! Inventore voluptas
-                    voluptates quia voluptatum expedita, ducimus delectus dolore eaque maiores iusto modi eum aut corporis?
+                    Soy de la ciudad Popayán, estudio en el Colegio Mayor del Cauca. Algunos de mis pasatiempos son dibujar y ver peliculas biograficas o drama como The Walk y The Greatest Showman
+                </p>
+            </article>
+
+            <article class="team-info">
+                <img class="team-info__imagen" src="https://i.postimg.cc/VspXJNK0/icons8-woman-60.png" alt="">
+                <h2 class="team-info__title">Melissa Galvez</h2>
+                <p class="team-info__text">
+                    Soy de la ciudad de Popayán, estudio Administración de Empresas en la Universidad del Cauca y en mis ratos libres me gusta pintar y ver peliculas de animacion o suspenso como El Viaje de Chihiro o Interstellar.
                 </p>
             </article>
 
@@ -353,20 +409,49 @@
     <!-- fin contenido principal -->
 
     <!-- Inicio pie del sitio -->
-    <div class="seccion-pie">
-        <article>
-            <h2>Contacto</h2>
-            <p>Aquí van varias lineas</p>
-            <p>Donde va la información de contacto</p>
-            <p>Como el teléfono y demás</p>
-        </article>
-        <article>
-            <h2>Otra Información</h2>
-            <p>Aquí van varias lineas</p>
-            <p>Donde va la otra información</p>
-            <p>Como el mapa del sitio o enlaces importantes</p>
-        </article>
-    </div>
+    <footer class="footer-section">
+        <div class="footerhead">
+            <div class="menucontainer">
+                <div class="footer-left">
+                    <h5>Mapa del Sitio</h5>
+                    <nav class="mapaDelSitio">
+                        <ul><a href="#servicios">SERVICIOS</a></ul>
+                        <ul><a href="#noticias">NOTICIAS</a></ul>
+                        <ul><a href="#Equipos">EQUIPOS</a></ul>
+                    </nav>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <h2>Obten las últimas noticias y anuncios</h2>
+                        <input type="email" class="Subscribe-email" value="" placeholder="Ingrese su correo">
+                        <input type="button" value="Subscribirse">
+                    </div>
+                </div>
+                <div class="footer-right">
+
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <div class="footerbottom">
+            <div class="left">
+                Copyright © 2021 Bash All Rights Reserved.
+            </div>
+            <div class="right">
+                <div class="privateNotice">
+                    <a href="">Private Notice</a>
+                </div>
+                <div class="legal">
+                    <a href="">Legal</a>
+                </div>
+                <div class="cookiePolicy">
+                    <a href="">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- fin pie del sitio -->
 
 </body>
