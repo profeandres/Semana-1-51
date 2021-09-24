@@ -32,36 +32,52 @@
             background-color: #FBDE44FF;
             display:block;
             max-width: min-content;
-            margin-left: 570px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 40px;
+            padding: 7px;
         }
         .estilo-drama{
             
             color: white;
             background-color: #F65058FF;
-            display:block;
             max-width: min-content;
-            margin-left: 65px;
+            padding:auto;
+            font-size: 30px;
         }
         .estilo-terror{
             color: white;
             background-color: #28334AFF;
-            display:block;
             max-width: min-content;
-            
+            padding: auto;
+            font-size: 30px;
         }
         .estilo-comedia{
             color: white;
             background-color: #F65058FF;
-            display:block;
             max-width: min-content;
-            
+            padding: auto;
+            font-size: 30px;
         }
         .estilo-acción{
             color: white;
             background-color: #28334AFF;
-            display:block;
             max-width: min-content;
-            
+            padding: auto;
+            font-size: 30px;
+        }
+
+        .botones{
+            display: flex;
+            align-content: space-between;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .comedia,.terror,.accion,.drama{
+            margin:auto;
         }
 
     </style>
@@ -71,13 +87,26 @@
     <!-- Categorias -->
     <main>
         <h1 <span class="fondo-categorias">Categorias</span></h1>
-        <div>
-         <input type = "button" class="estilo-drama" value="Drama">
-         <input type = "button" class="estilo-comedia" value="Comedia">
-         <input type = "button" class="estilo-terror" value="Terror">
-         <input type = "button" class="estilo-acción" value="Acción">
+        
+        <div class="botones">
 
-        </div>
+            <div class="drama">
+                <input type = "button" class="estilo-drama" value="Drama">
+            </div>
+
+            <div class="terror">
+                <input type = "button" class="estilo-terror" value="Terror">
+            </div>
+            
+            <div class="comedia">
+                <input type = "button" class="estilo-comedia" value="Comedia">
+            </div>
+
+            <div class="accion">
+                <input type = "button" class="estilo-acción" value="Acción">
+            </div>
+
+         </div>
 
       
     <!-- Recomendaciones aleatorias -->
@@ -86,4 +115,3 @@
     <footer></footer>
 </body>
 </html>
-
