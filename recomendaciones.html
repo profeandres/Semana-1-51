@@ -17,6 +17,7 @@
             font-family: 'Montserrat', sans-serif;
             font-family: 'Lato', sans-serif;
         }
+
         body {
             max-width: 1400px;
             min-width: 375px;
@@ -27,6 +28,8 @@
             color: white;
             background-color: #000
         }
+
+        
         .fondo-categorias {
             color: black;
             background-color: #FBDE44FF;
@@ -35,8 +38,9 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            font-size: 40px;
-            padding: 7px;
+            font-size: 30px;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
         }
         .estilo-drama{
             
@@ -45,6 +49,7 @@
             max-width: min-content;
             padding:auto;
             font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
         }
         .estilo-terror{
             color: white;
@@ -52,6 +57,7 @@
             max-width: min-content;
             padding: auto;
             font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
         }
         .estilo-comedia{
             color: white;
@@ -59,6 +65,7 @@
             max-width: min-content;
             padding: auto;
             font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
         }
         .estilo-acción{
             color: white;
@@ -66,6 +73,7 @@
             max-width: min-content;
             padding: auto;
             font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .botones{
@@ -74,11 +82,78 @@
             max-width: 100%;
             margin-left: auto;
             margin-right: auto;
+            border-top: azure;
+            border-bottom: solid;
+            padding-bottom: 80px;
+            margin-top: 80px;
+            
         }
 
         .comedia,.terror,.accion,.drama{
             margin:auto;
         }
+
+        /* Recomendaciones */
+        .recomendation-section{
+            margin-bottom: 420px;
+            margin-top: 60px;
+        }
+
+        .recomendation-title>h1{
+            color: #000;
+            background-color:#F65058FF;
+            padding: 3px 12px 5px 16px ;
+            width: 320px;
+            margin: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+        }
+
+
+
+        /* Footer */
+        .footer-section{
+            background-color: #F65058FF;
+        }
+
+        .menucontainer{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mapaDelSitio ul a{
+            text-decoration: none;
+            color: rgb(10, 10, 10);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footerbottom{
+            display: flex;
+            justify-content:space-between;
+            background-color: rgb(255, 65, 74);
+            padding: 5px 0px;
+        }
+    
+        .footer-left>h5{
+            font-family: 'Montserrat', sans-serif;
+            margin-left:36px;
+            font-size: medium;
+        }
+        .right,.left{
+            display: inline;
+            width: 50%;
+            text-align: center;
+        }
+
+        .privateNotice,.legal,.cookiePolicy{
+            display: inline-block;
+            margin: 0px 10px;
+        }
+        .privateNotice a,.legal a,.cookiePolicy a{
+            text-decoration: none;
+            color:white;
+        }
+
 
     </style>
     
@@ -110,8 +185,64 @@
 
       
     <!-- Recomendaciones aleatorias -->
+
+    <Section class="recomendation-section">
+        <div class="recomendation-title">
+            <h1>Recomendaciones</h1>
+        </div>
+        
+    </Section>
+
+    
+
+
+
     </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer-section">
+            <div class="footerhead">
+                <div class="menucontainer">
+                    <div class="footer-left">
+                        <h5>Mapa del Sitio</h5>
+                        <nav class="mapaDelSitio">
+                            <ul><a href="#servicios">SERVICIOS</a></ul>
+                            <ul><a href="#noticias">NOTICIAS</a></ul>
+                            <ul><a href="#Equipos">EQUIPOS</a></ul>
+                        </nav>
+                    </div>
+                    <div class="footer-center">
+                        <div>
+                            <h2>Obten las últimas noticias y anuncios</h2>
+                            <input type="email" class="Subscribe-email" value="" placeholder="Ingrese su correo">
+                            <input type="button" value="Subscribirse">
+                        </div>
+                    </div>
+                    <div class="footer-right">
+    
+                    </div>
+                    <div class="clear"></div>
+                </div>
+    
+            </div>
+    
+            <div class="footerbottom">
+                <div class="left">
+                    Copyright © 2021 Bash All Rights Reserved.
+                </div>
+                <div class="right">
+                    <div class="privateNotice">
+                        <a href="">Private Notice</a>
+                    </div>
+                    <div class="legal">
+                        <a href="">Legal</a>
+                    </div>
+                    <div class="cookiePolicy">
+                        <a href="">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="recomendaciones.js"></script>
 </body>
 </html>
