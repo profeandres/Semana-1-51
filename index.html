@@ -5,181 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-    <style>
-
-        body {
-            max-width: 1400px;
-            min-width: 375px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 0;
-            margin-bottom: 0;
-            color: white;
-            background-color: #000
-        }
-
-        .banner {
-            width: 100%;
-        }
-
-        .banner>img {
-            width: 100%;
-            height: 400px;
-            max-width: 1400px;
-            object-fit: cover;
-        }
-
-        .services-section,
-        .seccion-noticias,
-        .seccion-equipo {
-            display: flex;
-            margin-bottom: 100px;
-            margin-left: 20px;
-        }
-
-        .seccion-noticias{
-            background-color: #000
-
-        }
-
-        .seccion-noticias {
-            flex-wrap: wrap;
-        }
-
-        .services-info {
-            padding: 20px;
-            text-align: center;
-        }
-        .fondo-servicios {
-            color:white;
-            background-color: #F65058FF;
-            display:block;
-            max-width: min-content;
-            margin-left: 65px;
-
-        }
-
-        .news-info {
-            width: 50%;
-            padding: 20px;
-        }
-
-        .news-header {
-            display: flex;
-            justify-content: space-around;
-            
-        }
-
-        .news-info__title {
-            align-self: flex-start;
-            color: #FBDE44FF;
-        }
-
-        .news-imagen{            
-            border: 7px groove #FBDE44FF;
-            display: flex;
-        }
-
-        .seccion-pie {
-            background-color: #25294f;
-            height: 200px;
-            display: flex;
-            color: white;
-            justify-content: space-evenly;
-        }
-
-        .services-info__imagen {
-            border-radius: 0;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        .team_title{
-            font-family: 'Montserrat', sans-serif;
-            background-color: #25294f;
-            padding: 10px 9px 10px;
-            display:block;
-            max-width: min-content;
-            margin-left: 65px
-        }
-
-        .team-info{
-            width: 25%;
-            padding: 15px;
-        }
-
-        .team-info__imagen{
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        .team-info__title{
-            font-family: 'Montserrat', sans-serif;
-
-        }
-
-        .fondo-noticias {
-            color: #000;
-            background-color: #FBDE44FF;
-            display:block;
-            max-width: min-content;
-            margin-left: 65px;
-
-        }
-
-        .descripcionServicios{
-            display: block;
-            margin-left: 180px;
-        }
-
-        .fuenteImagen{
-            display: block;
-            font-size: 10px;
-        }
-
-        .footer-section{
-            background-color: #F65058FF;
-        }
-
-        .menucontainer{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .mapaDelSitio ul a{
-            text-decoration: none;
-            color: white;
-        }
-
-        .footerbottom{
-            display: flex;
-            justify-content:space-between;
-            background-color: rgb(255, 65, 74);
-            padding: 5px 0px;
-        }
-    
-        .right,.left{
-            display: inline;
-            width: 50%;
-            text-align: center;
-            background-color: #F65058FF;
-        }
-
-        .privateNotice,.legal,.cookiePolicy{
-            display: inline-block;
-            margin: 0px 10px;
-        }
-        .privateNotice a,.legal a,.cookiePolicy a{
-            text-decoration: none;
-            color:white;
-        }
-
-    </style>
 
 <!-- inicio encabezado del sitio -->
 
@@ -221,42 +51,47 @@
         </div>  
         <div>
             <a href="#">
-                <button>
+                <button id="button_rec">
                     Recomendaciones
                 </button>
             </a>
         </div>
 
-        <div class="container">
-    
-            <ul class="slider">
-            <li id="slide1">
-                <img 
-                src="./images/jurassic_world_fallen_kingdom.jpg"/>
-            </li>
-            <li id="slide2">
-                <img 
-                src="./images/notebook_ver4.jpg"/>
-            </li>
-            <li id="slide3">
-                <img 
-                src="./images/spiderman_into_the_spiderverse.jpg"/>
-            </li>
-            </ul>
-            
-            <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-            </ul>
-            
-        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/jurassic_world_fallen_kingdom.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>jurassic_world_fallen_kingdom</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/notebook_ver4.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>notebook_ver4</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/spiderman_into_the_spiderverse.jpg" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>spiderman_into_the_spiderverse</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
     <hr />
 <!-- Fin Sub header -->
@@ -459,7 +294,7 @@
         </div>
     </footer>
     <!-- fin pie del sitio -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>
