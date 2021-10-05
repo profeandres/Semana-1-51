@@ -96,6 +96,9 @@ button:hover {
   background-color: rgb(255, 65, 40);
 }
 
+.carousel-dark .carousel-indicators [data-bs-target]{
+  background-color: white;
+}
 .carousel, .carousel-inner > .item > img {  
   width: 477px;
   height: 550px;
