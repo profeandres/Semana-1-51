@@ -20,17 +20,13 @@
 }
 
 .site-nav {
-    width: 40%;
-    display: flex;
     justify-content: space-around;
     align-items:center;
     padding: 0px 0px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
 }
 
 .site-title {
-    width: 0%;
-    margin-right: auto;
     font-weight: bold;
 }
 
@@ -45,38 +41,23 @@
 }
 
 .logo-container {
-    width: 10%;
     cursor: pointer;
 }
 
 .logo-container__site-logo {
-    height: 80px;
+    height: 90px;
 }
 
-.logo-container__bash-logo {
-  height: 80px;
-}
-
-#front-portada{  
-  margin-left: 30px;
-  font-size: 80px;
-  position: absolute;
+#front-portada{ 
   color: #FBDE44FF;
-  margin-top: 250px;
 }
 
 #front-portada-II{
-  margin-left: 30px;
-  font-size: 60px;
-  position: absolute;
   color: #FBDE44FF;
-  margin-top: 350px;
-  padding: 10px;
 
 }
 
 #button_rec {
-  margin-left: 30px;
   padding: 9px 25px;
   background-color: rgb(255, 65, 74);
   border: none;
@@ -85,11 +66,8 @@
   transition: all 0.3s ease 0s;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 40px;
   color: #edf0f1;
   text-decoration: none;
-  position: absolute;
-  margin-top: 450px;
 }
 
 button:hover {
@@ -102,8 +80,6 @@ button:hover {
 .carousel, .carousel-inner > .item > img {  
   width: 477px;
   height: 550px;
-  margin-left: 850px;
-  display: inline-block;
 }
 
 .d-block{  
