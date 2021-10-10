@@ -37,8 +37,8 @@
         </b-navbar-nav>
         <b-navbar-nav>
           <b-nav-item class="nav-link" to="/index.vue">Inicio</b-nav-item>
-          <b-nav-item class="nav-link" to="/">Servicios</b-nav-item>
-          <b-nav-item class="nav-link" to="/">Noticias</b-nav-item>
+          <b-nav-item class="nav-link" to="#section1">Servicios</b-nav-item>
+          <b-nav-item class="nav-link" to="#section2">Noticias</b-nav-item>
           <b-nav-item class="nav-link" to="/">Equipo</b-nav-item>
           <b-nav-item class="nav-link" to="/login">Acceder</b-nav-item>
         </b-navbar-nav>

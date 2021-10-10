@@ -1,8 +1,8 @@
 <template>
-  <div class="login">
-    
+  <div id="building" class="login">
     <div class="mt-5 login-content">
       <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <img src="https://img.icons8.com/color-glass/96/000000/starred-ticket.png" alt="BASH LOGO">
         <b-form-group
           id="input-group-1"
           label="Email address:"
@@ -38,8 +38,8 @@
           </b-form-checkbox-group>
         </b-form-group>
 
-        <b-button type="submit" variant="primary" class="mr-2">Submit</b-button>
-        <b-button type="reset" variant="danger">Regresar</b-button>
+        <b-button type="submit" variant="warning" class="mr-2">Submit</b-button>
+        <b-button type="reset" variant="dark">Regresar</b-button>
       </b-form>      
     </div>
   </div>
@@ -73,15 +73,34 @@
   }
 </script>
 <style>
-  .login {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+body{  
+  height: 750px;
+  object-fit: contain;
+  margin: 0 auto;
+  background-color: black;
   }
-  .login .login-content{
-    background-color: aqua;
-    padding: 15px;
-    max-width: 400px;
-    border-radius: 10px;
-  }
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.login .login-content{
+  background-color: #F65058FF;
+  color: white;
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+#building{
+  background:url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+  width:100%;			
+  height:100%;		
+  position: fixed;
+  background-size:100% 100%;
+  align-items: center;
+}
 </style>
