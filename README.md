@@ -6,6 +6,5 @@ INTEGRANTES DEL GRUPO:
 
 - Maria Camila Pacheco  (MariaCamilaP20)
 - Melissa  Galvez  (MelissaGB)
-- Miguel Velazco (mivelasco)
 - Wilmer Camargo (Wcamargo05)
 - Andrés Cantillo (profeandres)
