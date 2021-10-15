@@ -4,8 +4,9 @@
   "description": "Api Rest",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "babel -node app.js --exec",
+    "dev": "nodemon app.js",
+    "devbabel": "nodemon app.js --exec babel-node",
     "start:dev": "nodemon index.js"
   },
   "author": "Victor Vargas",
@@ -18,5 +19,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
+
   }
 }
